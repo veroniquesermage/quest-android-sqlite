@@ -30,5 +30,23 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
+
+        Button btAddRoom = findViewById(R.id.button_add_room);
+        btAddRoom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RoomCreateActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        Button btViewRoomList = findViewById(R.id.button_view_room_list);
+        btViewRoomList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RoomListActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
     }
 }

@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">RoomReservation</string>
     <string name="add_a_person">Add a person</string>
-    <string name="view_person_list">View person list</string>
+    <string name="view_persons_list">View persons list</string>
     <string name="create">Create</string>
     <string name="language">Language</string>
     <string name="address">Address</string>
     <string name="lastname">Lastname</string>
     <string name="firstname">Firstname</string>
+    <string name="name">Name</string>
+    <string name="add_a_room">Add a room</string>
+    <string name="view_rooms_list">View rooms list</string>
 </resources>

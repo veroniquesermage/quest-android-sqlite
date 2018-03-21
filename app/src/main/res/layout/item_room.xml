@@ -6,26 +6,14 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/text_lastname"
+        android:id="@+id/text_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Lastname" />
-
-    <TextView
-        android:id="@+id/text_firstname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/text_lastname"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Firstname" />
-
+        tools:text="Name" />
 </android.support.constraint.ConstraintLayout>

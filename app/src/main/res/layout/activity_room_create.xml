@@ -6,28 +6,19 @@
     android:layout_gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="fr.wildcodeschool.roomreservation.PersonCreateActivity">
+    tools:context="fr.wildcodeschool.roomreservation.RoomCreateActivity">
 
     <EditText
-        android:id="@+id/edit_firstname"
+        android:id="@+id/edit_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="@string/firstname"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/edit_lastname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="@string/lastname"
-        android:inputType="textPersonName" />
+        android:hint="@string/name"
+        android:inputType="textCapWords" />
 
     <Button
-        android:id="@+id/button_create_person"
+        android:id="@+id/button_create_room"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/create" />

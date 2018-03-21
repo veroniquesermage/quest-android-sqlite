@@ -15,9 +15,9 @@ import java.util.List;
  * Created by bastienwcs on 21/03/18.
  */
 
-public class PersonAdapter extends ArrayAdapter<PersonModel> {
+public class RoomAdapter extends ArrayAdapter<RoomModel> {
 
-    public PersonAdapter(@NonNull Context context, int resource, @NonNull List<PersonModel> objects) {
+    public RoomAdapter(@NonNull Context context, int resource, @NonNull List<RoomModel> objects) {
         super(context, resource, objects);
     }
 
@@ -25,15 +25,13 @@ public class PersonAdapter extends ArrayAdapter<PersonModel> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if (convertView == null) {
-            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_person, parent, false);
+            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_room, parent, false);
         }
-        TextView tvFirtname = convertView.findViewById(R.id.text_firstname);
-        TextView tvLastname = convertView.findViewById(R.id.text_lastname);
+        TextView tvName = convertView.findViewById(R.id.text_name);
 
-        PersonModel personModel = getItem(position);
-        if (personModel != null) {
-            tvFirtname.setText(personModel.getFirstname());
-            tvLastname.setText(personModel.getLastname());
+        RoomModel roomModel = getItem(position);
+        if (roomModel != null) {
+            tvName.setText(roomModel.getName());
         }
 
         return convertView;

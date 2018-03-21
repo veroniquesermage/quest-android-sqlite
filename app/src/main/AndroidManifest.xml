@@ -20,6 +20,8 @@
             android:name=".PersonCreateActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".PersonListActivity" />
+        <activity android:name=".RoomListActivity" />
+        <activity android:name=".RoomCreateActivity"></activity>
     </application>
 
 </manifest>
